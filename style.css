@@ -30,6 +30,7 @@ main h2{
 
 .nav-element a{
     text-decoration: none;
+    color: #f1f1f1;
     transition: 0.15s linear;
     cursor:pointer;
 }
@@ -41,10 +42,10 @@ main h2{
     text-decoration: none;
     color: #f1f1f1;
 }
+
 .nav-element a:hover{
     color: #7af0da;
 }
-
 
 .card{
     overflow: hidden;
@@ -166,17 +167,7 @@ main h2{
     border: 2px  #7af0da solid;
     width: 30px;
 }
-.order-section #confirm-order{
-    align-self: center;
-    border: 2px #59b3a2 solid;
-    border-radius: 10px;
-    transition: 0.5s linear;
-}
-.order-section #confirm-order:hover{
-    background-color: #59b3a2;
-    color: #f1f1f1;
-    cursor: pointer;
-}
+
 
 .links{
     display: flex;
@@ -190,4 +181,15 @@ main h2{
 
 .links img:hover{
     transform: scale(1.1);
+}
+.order-section #confirm-order{
+    justify-self: center;
+    border: 2px #59b3a2 solid;
+    border-radius: 10px;
+    transition: 0.5s linear;
+}
+.order-section #confirm-order:hover{
+    background-color: #59b3a2;
+    color: #f1f1f1;
+    cursor: pointer;
 }

@@ -8,10 +8,13 @@ let pageValue = document.querySelector("#page-value");
 let speedValue = document.querySelector("#speed-value");
 let confirmOrder = document.querySelector("#confirm-order");
 
-confirmOrder.addEventListener("click", e => {
-    console.log(Math.floor((Number(pageRange.value)/Number(speedRange.value)) * Number(workCapacity.value) * 10));
-});
 
+let money_value = document.querySelector("#money-value");
+
+
+confirmOrder.addEventListener("click", e => {
+    money_value.textContent =  `Стоимость: ${Math.floor((Number(pageRange.value)/Number(speedRange.value)) * Number(workCapacity.value) * 10)} тыс. руб`
+});
 
 
 pageRange.addEventListener("change", e => {

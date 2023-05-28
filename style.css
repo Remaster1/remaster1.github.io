@@ -177,3 +177,17 @@ main h2{
     color: #f1f1f1;
     cursor: pointer;
 }
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.links img{
+    width: 100;
+    transition: .25s linear;
+}
+
+.links img:hover{
+    transform: scale(1.1);
+}

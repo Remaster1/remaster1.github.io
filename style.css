@@ -181,6 +181,7 @@ main h2{
 
 .links img:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 .order-section #confirm-order{
     justify-self: center;

@@ -1,196 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-body{
-    padding: 0;
-    margin: 0;
-    color: #060607;
-    background-color: #f1f1f1;
+
+body {
     font-family: 'Roboto', sans-serif;
+    background-color: #212121;
+    color: #FFFFFF;
+    padding: 10px 10%;
 }
 
-.navigation{
-    background-color: #61bfad;
-    color: #f1f1f1;
-    font-size: 25px;
-    height: 40px;
+nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 25px;
+    flex-wrap: wrap;
 }
 
-main h2{
-    text-align: center;
-    font-weight: 1;
-}
-.data{
-    margin: 10px 10px;
-    word-break:keep-all;
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-.nav-element a{
+nav ul li a {
+    position: relative;
+    color: #FFFFFF;
     text-decoration: none;
-    color: #f1f1f1;
-    transition: 0.15s linear;
-    cursor:pointer;
-}
-.nav-element a:visited{
-    text-decoration: none;
-    color: #f1f1f1;
-}
-.nav-element a:active{
-    text-decoration: none;
-    color: #f1f1f1;
+    font-size: 18px;
 }
 
-.nav-element a:hover{
-    color: #7af0da;
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #0044ff;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    transition: .25s ease-in-out;
 }
 
-.card{
-    overflow: hidden;
-    margin-bottom: 10px;
-    width: 200px;
-    display: inline-flex;
-    flex-direction: column;
-    border: 2px #7af0da solid;
-    word-break:keep-all;
-    border-radius: 3px;
-    transition: 0.15s linear;
-}
-.card:hover{
-    transform: scale(1.1);
-    cursor:default;
-}
-.data-cards{
-    display: flex;
-    align-content: space-evenly;
-}
-.card .sub-card button{
-    
-    border: 2px #59b3a2 solid;
-    border-radius: 10px;
-    transition: 0.5s linear;
-}
-.card .sub-card button:hover{
-    background-color: #59b3a2;
-    color: #f1f1f1;
-    cursor: pointer;
-}
-.card .sub-card{
-    user-select: none;
-    display: flex;
-    flex-direction: column;
-    background-color: #7af0da;
-    color: #060607;
-}
-.card img{
-    height: 100px;
-}
-.seciton-cards{
-    display: flex;
-    justify-content:space-evenly;
-    margin-bottom: 2px;
-    margin-left: 100px;
-    margin-right: 100px;
+nav ul li a:hover::after{
+    height: 2px;
+    width: 100%;
 }
 
-/* .order-section input[type="range"]::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    width: 1px;
-    height: 10px;
-    background-color: #59b3a2;
-    margin-top: -8px;
-    filter: opacity(.55);
+.logo {
+    font-size: 1.7em;
 }
-.order-section input[type="range"]::-webkit-slider-thumb:active{
-    -webkit-appearance: none;
-    width: 1px;
-    height: 10px;
-    background-color: #59b3a2;
-    border-radius: 10px;
-    filter: opacity(1);
-}
-.order-section input[type="range"]::-webkit-slider-runnable-track{
-    -webkit-appearance: none;
-    border: 1px #61bfad solid;
-    border-radius: 2px;
-    width: 1px;
-    height: 1px;
-    margin-right: 100px;
-} */
 
-.order-section{
-    display: flex;
-    width: 500px;
-    padding: 10px;
-    margin: auto;
-    border: 2px #7af0da solid;
-    border-radius: 3px;
-    flex-direction: column;
-    gap: 10px;
-}   
-.work-capacity{
-    display: inline-flex;
-}
-.button-left{
-    width: 20px;
-    border: 2px #59b3a2 solid;
+.greet-text{
     text-align: center;
-    cursor: pointer;
-    border-radius: 50px 10px 10px 50px;
-    transition: 0.5s linear;
-}
-.button-right{
-    width: 20px;
-    border: 2px #59b3a2 solid;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 10px 50px 50px 10px;
-    transition: 0.5s linear;
-}
-.button-left:hover{
-    background-color: #59b3a2;
-    color: #f1f1f1;
-}
-.button-right:hover{
-    background-color: #59b3a2;
-    color: #f1f1f1;
-}
-.work-capacity input{
-    border: 2px  #59b3a2 solid;
-    width: 30px;
-}
-
-.work-capacity input:focus{
-    outline: none;
-    border: 2px  #7af0da solid;
-    width: 30px;
-}
-
-
-.links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.links img{
-    width: 100;
-    transition: .25s linear;
-}
-
-.links img:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-.order-section #confirm-order{
-    justify-self: center;
-    border: 2px #59b3a2 solid;
-    border-radius: 10px;
-    transition: 0.5s linear;
-}
-.order-section #confirm-order:hover{
-    background-color: #59b3a2;
-    color: #f1f1f1;
-    cursor: pointer;
 }

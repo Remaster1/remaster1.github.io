@@ -38,7 +38,7 @@ nav ul li a::after {
     transition: .25s ease-in-out;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     height: 2px;
     width: 100%;
 }
@@ -47,6 +47,17 @@ nav ul li a:hover::after{
     font-size: 1.7em;
 }
 
-.greet-text{
+.greet-text {
     text-align: center;
+}
+
+.greet-text p{
+    font-size: 25px;
+}
+
+.gradient {
+    background: rgb(0, 3, 36);
+    background: linear-gradient(142deg, rgba(0, 3, 36, 1) 0%, rgba(9, 9, 121, 1) 27%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

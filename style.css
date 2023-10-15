@@ -8,11 +8,11 @@ body {
     padding: 10px 10%;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -51,7 +51,7 @@ nav ul li a:hover::after {
     text-align: center;
 }
 
-.greet-text p{
+.greet-text p {
     font-size: 25px;
 }
 
@@ -61,3 +61,13 @@ nav ul li a:hover::after {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.sub-title {
+    font-size: 30px;
+}
+
+
+.avatar {
+    border-radius: 5px;
+}
+

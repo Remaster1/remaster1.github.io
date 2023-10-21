@@ -82,16 +82,18 @@ nav ul li a:hover::after {
     display: flex;
 }
 
-.socials{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 10px;
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.socials i{
+
+.socials i {
     font-size: 25px;
     transition: .25s ease-in-out;
 }
-.socials i:hover{
+
+.socials i:hover {
     color: #0044ff;
     transform: scale(1.1);
 }
@@ -125,4 +127,28 @@ nav ul li a:hover::after {
 
 .services-list div i {
     font-size: 50px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
+}
+
+footer p a::before {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    height: 3px;
+    width: 0;
+    background: #0044ff;
+    transition: .25s ease-in-out;
+}
+
+footer p a:hover::before{
+    width: 100%;
+}
+
+footer p, footer p a {
+    color: #515151;
 }

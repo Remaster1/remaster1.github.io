@@ -13,6 +13,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 nav ul li {
@@ -71,3 +72,57 @@ nav ul li a:hover::after {
     border-radius: 5px;
 }
 
+#contact p i {
+    color: #0044ff;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#contact p {
+    display: flex;
+}
+
+.socials{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.socials i{
+    font-size: 25px;
+    transition: .25s ease-in-out;
+}
+.socials i:hover{
+    color: #0044ff;
+    transform: scale(1.1);
+}
+
+.blue-text {
+    color: #0044ff;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.services-list div {
+    background-color: #313131;
+    font-weight: 300;
+    padding: 40px;
+    transition: .5s ease-in-out;
+}
+
+.services-list div h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.services-list div:hover {
+    background-color: #0044ff;
+    transform: translateY(-10px);
+}
+
+.services-list div i {
+    font-size: 50px;
+}
